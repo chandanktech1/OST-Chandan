@@ -1,0 +1,310 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+Z:\\>set home=c:\\users\\student\par
+\par
+Z:\\>c:\par
+\par
+C:\\>git config --global user.name"chandanktech1"\par
+\par
+C:\\>git config --global user.email"chandanktech07@gmail.com"\par
+\par
+C:\\>git --version\par
+git version 2.45.1.windows.1\par
+\par
+C:\\>git init\par
+Reinitialized existing Git repository in C:/.git/\par
+\par
+C:\\>mkdir ost\par
+A subdirectory or file ost already exists.\par
+\par
+C:\\>mkdir ost\par
+A subdirectory or file ost already exists.\par
+\par
+C:\\>git init\par
+Reinitialized existing Git repository in C:/.git/\par
+\par
+C:\\>cd ost\par
+\par
+C:\\ost>git init\par
+Reinitialized existing Git repository in C:/ost/.git/\par
+\par
+C:\\ost>git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+nothing to commit (create/copy files and use "git add" to track)\par
+\par
+C:\\ost>echo sample.txt\par
+sample.txt\par
+\par
+C:\\ost>echodemo.py\par
+'echodemo.py' is not recognized as an internal or external command,\par
+operable program or batch file.\par
+\par
+C:\\ost>echo demo.py\par
+demo.py\par
+\par
+C:\\ost>git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+nothing to commit (create/copy files and use "git add" to track)\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:16    <DIR>          .\par
+29-01-2026  12:16    <DIR>          ..\par
+               0 File(s)              0 bytes\par
+               2 Dir(s)  74,900,779,008 bytes free\par
+\par
+C:\\ost>echo sample.txt\par
+sample.txt\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:16    <DIR>          .\par
+29-01-2026  12:16    <DIR>          ..\par
+               0 File(s)              0 bytes\par
+               2 Dir(s)  74,900,844,544 bytes free\par
+\par
+C:\\ost>echo Hello> sample.txt\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:37    <DIR>          .\par
+29-01-2026  12:37    <DIR>          ..\par
+29-01-2026  12:37                 7 sample.txt\par
+               1 File(s)              7 bytes\par
+               2 Dir(s)  74,900,303,872 bytes free\par
+\par
+C:\\ost>type sample.txt\par
+Hello\par
+\par
+C:\\ost>git commit -m "Initial Commit"\par
+On branch master\par
+\par
+Initial commit\par
+\par
+Untracked files:\par
+  (use "git add <file>..." to include in what will be committed)\par
+        sample.txt\par
+\par
+nothing added to commit but untracked files present (use "git add" to track)\par
+\par
+C:\\ost>git add sample.txt\par
+\par
+C:\\ost>git commit -m "Initial Commit"\par
+[master (root-commit) 4db9386] Initial Commit\par
+ Committer: Students <student@mefgi.com>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly. Run the\par
+following command and follow the instructions in your editor to edit\par
+your configuration file:\par
+\par
+    git config --global --edit\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 sample.txt\par
+\par
+C:\\ost>git branch\par
+* master\par
+\par
+C:\\ost>gut branch -m master main\par
+'gut' is not recognized as an internal or external command,\par
+operable program or batch file.\par
+\par
+C:\\ost>git branch\par
+* master\par
+\par
+C:\\ost>git checkout main\par
+error: pathspec 'main' did not match any file(s) known to git\par
+\par
+C:\\ost>git checkout -b dev\par
+Switched to a new branch 'dev'\par
+\par
+C:\\ost>echo Hello from dev>>sample.txt\par
+\par
+C:\\ost>git add .\par
+\par
+C:\\ost>git commit -m "Update in dev"\par
+[dev 33b4787] Update in dev\par
+ Committer: Students <student@mefgi.com>\par
+Your name and email address were configured automatically based\par
+on your username and hostname. Please check that they are accurate.\par
+You can suppress this message by setting them explicitly. Run the\par
+following command and follow the instructions in your editor to edit\par
+your configuration file:\par
+\par
+    git config --global --edit\par
+\par
+After doing this, you may fix the identity used for this commit with:\par
+\par
+    git commit --amend --reset-author\par
+\par
+ 1 file changed, 1 insertion(+)\par
+\par
+C:\\ost>git merge dev\par
+Already up to date.\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:37    <DIR>          .\par
+29-01-2026  12:37    <DIR>          ..\par
+29-01-2026  12:41                23 sample.txt\par
+               1 File(s)             23 bytes\par
+               2 Dir(s)  74,907,422,720 bytes free\par
+\par
+C:\\ost>type sample.txt\par
+Hello\par
+Hello from dev\par
+\par
+C:\\ost>git remote -v\par
+\par
+C:\\ost>git remote add origin {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22\par
+\par
+C:\\ost>git remote -v\par
+origin  {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22  (fetch)\par
+origin  {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22  (push)\par
+\par
+C:\\ost>git push -u origin main\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>git push -u origin main\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>git pull --rebase origin main\par
+remote: Enumerating objects: 9, done.\par
+remote: Counting objects: 100% (9/9), done.\par
+remote: Compressing objects: 100% (7/7), done.\par
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)\par
+Unpacking objects: 100% (9/9), 331.46 KiB | 341.00 KiB/s, done.\par
+From {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22\par
+ * branch            main       -> FETCH_HEAD\par
+ * [new branch]      main       -> origin/main\par
+Successfully rebased and updated refs/heads/dev.\par
+\par
+C:\\ost>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is 95C3-F9A6\par
+\par
+ Directory of C:\\ost\par
+\par
+29-01-2026  12:49    <DIR>          .\par
+29-01-2026  12:49    <DIR>          ..\par
+29-01-2026  12:49           228,913 01CE0618 - Open Source Technologies Syllabus.pdf\par
+29-01-2026  12:49           194,422 Practical-1.pdf\par
+29-01-2026  12:49                13 README.md\par
+29-01-2026  12:49                23 sample.txt\par
+               4 File(s)        423,371 bytes\par
+               2 Dir(s)  74,905,800,704 bytes free\par
+\par
+C:\\ost>git push origin main\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>git push origin main\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>git pull --rebase origin main\par
+From {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22\par
+ * branch            main       -> FETCH_HEAD\par
+Current branch dev is up to date.\par
+\par
+C:\\ost>git push origin main\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>\par
+C:\\ost>git push origin main --force\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>git push -u origin main\par
+error: src refspec main does not match any\par
+error: failed to push some refs to '{{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22 '\par
+\par
+C:\\ost>git push -u origin dev\par
+info: please complete authentication in your browser...\par
+Enumerating objects: 7, done.\par
+Counting objects: 100% (7/7), done.\par
+Delta compression using up to 4 threads\par
+Compressing objects: 100% (4/4), done.\par
+Writing objects: 100% (6/6), 502 bytes | 251.00 KiB/s, done.\par
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)\par
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.\par
+remote:\par
+remote: Create a pull request for 'dev' on GitHub by visiting:\par
+remote:      {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan/pull/new/dev }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan/pull/new/dev\ul0\cf0}}}}\f0\fs22\par
+remote:\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22\par
+ * [new branch]      dev -> dev\par
+branch 'dev' set up to track 'origin/dev'.\par
+\par
+C:\\ost>\par
+C:\\ost>git push origin dev:main\par
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)\par
+To {{\field{\*\fldinst{HYPERLINK https://github.com/chandanktech1/OST-Chandan }}{\fldrslt{https://github.com/chandanktech1/OST-Chandan\ul0\cf0}}}}\f0\fs22\par
+   c7e9d82..847adc0  dev -> main\par
+\par
+C:\\ost>\par
+C:\\ost>local dev  \f1\u8594?\f0   remote main\par
+'local' is not recognized as an internal or external command,\par
+operable program or batch file.\par
+\par
+C:\\ost>\par
+C:\\ost>git checkout -b main\par
+Switched to a new branch 'main'\par
+\par
+C:\\ost>git push -u origin main\par
+branch 'main' set up to track 'origin/main'.\par
+Everything up-to-date\par
+\par
+C:\\ost>git checkout main\par
+Already on 'main'\par
+Your branch is up to date with 'origin/main'.\par
+\par
+C:\\ost>git branch\par
+  dev\par
+* main\par
+  master\par
+\par
+C:\\ost>* dev\par
+'*' is not recognized as an internal or external command,\par
+operable program or batch file.\par
+\par
+C:\\ost>git push -u origin dev\par
+branch 'dev' set up to track 'origin/dev'.\par
+Everything up-to-date\par
+\par
+C:\\ost>\par
+C:\\ost>\lang9\par
+}
+ 
